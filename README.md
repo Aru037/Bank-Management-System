@@ -1,7 +1,7 @@
 # Bank-Management-System
 A desktop-based Bank Management System developed using Java Swing and MySQL that simulates core banking features like user signup, deposits, withdrawals, balance enquiry, mini statement, and more.
-
-🚀 Features
+<br><br>
+#🚀 Features
 User Registration (Signup with multi-step form)
 
 Secure Login with PIN
@@ -23,16 +23,16 @@ Balance Enquiry
 Fully GUI-based using Java Swing
 
 Connected to MySQL backend using JDBC
-
-🛠️ Tech Stack
+<br><br>
+#🛠️ Tech Stack
 Technology	Description
 Java	Backend logic and GUI (Swing)
 MySQL	Relational database
 JDBC	Java Database Connectivity
 Swing	GUI framework
 IntelliJ / Eclipse	Java IDE for development
-
-📂 Database Schema
+<br><br>
+#📂 Database Schema
 sql
 Copy
 Edit
@@ -66,7 +66,10 @@ CREATE TABLE login (
 CREATE TABLE bank (
     pin VARCHAR(20), date VARCHAR(50), type VARCHAR(20), amount VARCHAR(20)
 );
-💻 How to Run
+
+<br><br>
+
+#💻 How to Run
 Clone the repository:
 
 bash
