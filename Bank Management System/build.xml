@@ -1,0 +1,25 @@
+<project name="BankManagementSystem" default="run" basedir=".">
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="out"/>
+    <property name="lib.dir" value="."/> <!-- Assuming jars are in project root -->
+
+    <!-- Path to external libraries -->
+    <path id="classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" classpathref="classpath"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="Login" fork="true" classpath="${build.dir};${lib.dir}/mysql-connector-java-8.0.28.jar"/>
+    </target>
+</project>
